@@ -2,6 +2,8 @@
 
 Creador de avatares juvenil, responsive y reutilizable construido con React y TypeScript. El personaje se compone desde assets SVG externos definidos por un manifest, sin acoplar el renderer al editor.
 
+**Demo:** https://jimmyjames404.github.io/avatar-creator-2d/
+
 ## Funciones
 
 - Composición por capas y cabello multicapa.
