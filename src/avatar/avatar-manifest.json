@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "canvas": { "width": 512, "height": 512 },
+  "layerOrder": ["background", "body", "ears", "hairBack", "face", "eyesBase", "eyesColor", "eyebrows", "mouth", "outfit", "neckAccessory", "sash", "sashHonors", "hairFront", "glasses", "headwear", "accessory", "foregroundEffect"],
+  "palettes": {
+    "skinTone": { "porcelain": "#f8d8c4", "peach": "#f1bd98", "warm": "#d99568", "honey": "#b96f48", "umber": "#81462f", "deep": "#4f2b25" },
+    "hairColor": { "ink": "#1c2030", "espresso": "#4a2c2a", "chestnut": "#7b4435", "copper": "#b95c3e", "gold": "#e5b95e", "silver": "#aeb8c8", "violet": "#7257c8" },
+    "eyeColor": { "brown": "#70452f", "black": "#1e2330", "blue": "#3d78bb", "green": "#3b8a68", "violet": "#7658a5" },
+    "outfitColor": { "teal": "#147d82", "navy": "#283b73", "berry": "#a83b65", "gold": "#c9952e" }
+  },
+  "categories": [
+    {
+      "id": "background", "label": "Fondo", "icon": "▧", "selectionKey": "background",
+      "items": [
+        { "id": "background-none", "name": "Sin fondo", "nullable": true, "thumbnail": "/avatar/thumbs/none.svg", "layers": [] },
+        { "id": "background-sunrise", "name": "Amanecer", "thumbnail": "/avatar/thumbs/background-sunrise.svg", "layers": [{ "slot": "background", "src": "/avatar/backgrounds/sunrise.svg" }] },
+        { "id": "background-forest", "name": "Bosque", "thumbnail": "/avatar/thumbs/background-forest.svg", "layers": [{ "slot": "background", "src": "/avatar/backgrounds/forest.svg" }] },
+        { "id": "background-starglow", "name": "Noche estelar", "thumbnail": "/avatar/thumbs/background-starglow.svg", "layers": [{ "slot": "background", "src": "/avatar/backgrounds/starglow.svg" }] },
+        { "id": "background-camp", "name": "Campamento", "unlocked": false, "thumbnail": "/avatar/thumbs/background-camp.svg", "layers": [{ "slot": "background", "src": "/avatar/backgrounds/camp.svg" }] }
+      ]
+    },
+    {
+      "id": "body", "label": "Piel", "icon": "◉", "selectionKey": "body", "colorKey": "skinTone",
+      "items": [{ "id": "body-01", "name": "Cuerpo base", "colors": ["porcelain", "peach", "warm", "honey", "umber", "deep"], "thumbnail": "/avatar/thumbs/body.svg", "layers": [{ "slot": "body", "src": "/avatar/body/body.svg", "tint": "skinTone" }, { "slot": "ears", "src": "/avatar/body/ears.svg", "tint": "skinTone" }] }]
+    },
+    {
+      "id": "face", "label": "Rostro", "icon": "☺", "selectionKey": "face",
+      "items": [
+        { "id": "face-round", "name": "Redondo", "thumbnail": "/avatar/thumbs/face-round.svg", "layers": [{ "slot": "face", "src": "/avatar/faces/round.svg", "tint": "skinTone" }] },
+        { "id": "face-soft", "name": "Suave", "thumbnail": "/avatar/thumbs/face-soft.svg", "layers": [{ "slot": "face", "src": "/avatar/faces/soft.svg", "tint": "skinTone" }] }
+      ]
+    },
+    {
+      "id": "eyes", "label": "Ojos", "icon": "◌", "selectionKey": "eyes", "colorKey": "eyeColor",
+      "items": [
+        { "id": "eyes-bright", "name": "Brillantes", "colors": ["brown", "black", "blue", "green", "violet"], "thumbnail": "/avatar/thumbs/eyes-bright.svg", "layers": [{ "slot": "eyesBase", "src": "/avatar/eyes/bright-base.svg" }, { "slot": "eyesColor", "src": "/avatar/eyes/bright-iris.svg", "tint": "eyeColor" }] },
+        { "id": "eyes-calm", "name": "Tranquilos", "colors": ["brown", "black", "blue", "green", "violet"], "thumbnail": "/avatar/thumbs/eyes-calm.svg", "layers": [{ "slot": "eyesBase", "src": "/avatar/eyes/calm-base.svg" }, { "slot": "eyesColor", "src": "/avatar/eyes/calm-iris.svg", "tint": "eyeColor" }] },
+        { "id": "eyes-star", "name": "Curiosos", "colors": ["brown", "black", "blue", "green", "violet"], "thumbnail": "/avatar/thumbs/eyes-star.svg", "layers": [{ "slot": "eyesBase", "src": "/avatar/eyes/star-base.svg" }, { "slot": "eyesColor", "src": "/avatar/eyes/star-iris.svg", "tint": "eyeColor" }] },
+        { "id": "eyes-happy", "name": "Felices", "colors": ["brown", "black", "blue", "green", "violet"], "thumbnail": "/avatar/thumbs/eyes-happy.svg", "layers": [{ "slot": "eyesBase", "src": "/avatar/eyes/happy-base.svg" }, { "slot": "eyesColor", "src": "/avatar/eyes/happy-iris.svg", "tint": "eyeColor" }] },
+        { "id": "eyes-bold", "name": "Audaces", "colors": ["brown", "black", "blue", "green", "violet"], "thumbnail": "/avatar/thumbs/eyes-bold.svg", "layers": [{ "slot": "eyesBase", "src": "/avatar/eyes/bold-base.svg" }, { "slot": "eyesColor", "src": "/avatar/eyes/bold-iris.svg", "tint": "eyeColor" }] }
+      ]
+    },
+    {
+      "id": "eyebrows", "label": "Cejas", "icon": "⌒", "selectionKey": "eyebrows",
+      "items": [
+        { "id": "brows-soft", "name": "Suaves", "thumbnail": "/avatar/thumbs/brows-soft.svg", "layers": [{ "slot": "eyebrows", "src": "/avatar/brows/soft.svg" }] },
+        { "id": "brows-arch", "name": "Arqueadas", "thumbnail": "/avatar/thumbs/brows-arch.svg", "layers": [{ "slot": "eyebrows", "src": "/avatar/brows/arch.svg" }] },
+        { "id": "brows-bold", "name": "Marcadas", "thumbnail": "/avatar/thumbs/brows-bold.svg", "layers": [{ "slot": "eyebrows", "src": "/avatar/brows/bold.svg" }] },
+        { "id": "brows-curious", "name": "Curiosas", "thumbnail": "/avatar/thumbs/brows-curious.svg", "layers": [{ "slot": "eyebrows", "src": "/avatar/brows/curious.svg" }] }
+      ]
+    },
+    {
+      "id": "mouth", "label": "Expresión", "icon": "⌣", "selectionKey": "mouth",
+      "items": [
+        { "id": "mouth-smile", "name": "Sonrisa", "thumbnail": "/avatar/thumbs/mouth-smile.svg", "layers": [{ "slot": "mouth", "src": "/avatar/mouths/smile.svg" }] },
+        { "id": "mouth-grin", "name": "Gran sonrisa", "thumbnail": "/avatar/thumbs/mouth-grin.svg", "layers": [{ "slot": "mouth", "src": "/avatar/mouths/grin.svg" }] },
+        { "id": "mouth-calm", "name": "Serena", "thumbnail": "/avatar/thumbs/mouth-calm.svg", "layers": [{ "slot": "mouth", "src": "/avatar/mouths/calm.svg" }] },
+        { "id": "mouth-surprise", "name": "Sorpresa", "thumbnail": "/avatar/thumbs/mouth-surprise.svg", "layers": [{ "slot": "mouth", "src": "/avatar/mouths/surprise.svg" }] }
+      ]
+    },
+    {
+      "id": "hair", "label": "Cabello", "icon": "✦", "selectionKey": "hair", "colorKey": "hairColor",
+      "items": [
+        { "id": "hair-swoop", "name": "Flequillo", "colors": ["ink", "espresso", "chestnut", "copper", "gold", "silver", "violet"], "tags": ["hair-low"], "thumbnail": "/avatar/thumbs/hair-swoop.svg", "layers": [{ "slot": "hairBack", "src": "/avatar/hair/swoop-back.svg", "tint": "hairColor" }, { "slot": "hairFront", "src": "/avatar/hair/swoop-front.svg", "tint": "hairColor" }] },
+        { "id": "hair-bob", "name": "Bob", "colors": ["ink", "espresso", "chestnut", "copper", "gold", "silver", "violet"], "tags": ["hair-low"], "thumbnail": "/avatar/thumbs/hair-bob.svg", "layers": [{ "slot": "hairBack", "src": "/avatar/hair/bob-back.svg", "tint": "hairColor" }, { "slot": "hairFront", "src": "/avatar/hair/bob-front.svg", "tint": "hairColor" }] },
+        { "id": "hair-curls", "name": "Rizos", "colors": ["ink", "espresso", "chestnut", "copper", "gold", "silver", "violet"], "tags": ["hair-volume"], "thumbnail": "/avatar/thumbs/hair-curls.svg", "layers": [{ "slot": "hairBack", "src": "/avatar/hair/curls-back.svg", "tint": "hairColor" }, { "slot": "hairFront", "src": "/avatar/hair/curls-front.svg", "tint": "hairColor" }] },
+        { "id": "hair-ponytail", "name": "Cola alta", "colors": ["ink", "espresso", "chestnut", "copper", "gold", "silver", "violet"], "tags": ["hair-high"], "thumbnail": "/avatar/thumbs/hair-ponytail.svg", "layers": [{ "slot": "hairBack", "src": "/avatar/hair/ponytail-back.svg", "tint": "hairColor" }, { "slot": "hairFront", "src": "/avatar/hair/ponytail-front.svg", "tint": "hairColor" }] },
+        { "id": "hair-waves", "name": "Ondas", "colors": ["ink", "espresso", "chestnut", "copper", "gold", "silver", "violet"], "tags": ["hair-volume"], "thumbnail": "/avatar/thumbs/hair-waves.svg", "layers": [{ "slot": "hairBack", "src": "/avatar/hair/waves-back.svg", "tint": "hairColor" }, { "slot": "hairFront", "src": "/avatar/hair/waves-front.svg", "tint": "hairColor" }] },
+        { "id": "hair-crop", "name": "Corto", "colors": ["ink", "espresso", "chestnut", "copper", "gold", "silver", "violet"], "tags": ["hair-low"], "thumbnail": "/avatar/thumbs/hair-crop.svg", "layers": [{ "slot": "hairBack", "src": "/avatar/hair/crop-back.svg", "tint": "hairColor" }, { "slot": "hairFront", "src": "/avatar/hair/crop-front.svg", "tint": "hairColor" }] }
+      ]
+    },
+    {
+      "id": "outfit", "label": "Ropa", "icon": "◇", "selectionKey": "outfit", "colorKey": "outfitColor",
+      "items": [
+        { "id": "outfit-adventure", "name": "Aventura", "colors": ["teal", "navy", "berry", "gold"], "thumbnail": "/avatar/thumbs/outfit-adventure.svg", "layers": [{ "slot": "outfit", "src": "/avatar/outfits/adventure.svg", "tint": "outfitColor" }] },
+        { "id": "outfit-field", "name": "Exploración", "colors": ["teal", "navy", "berry", "gold"], "thumbnail": "/avatar/thumbs/outfit-field.svg", "layers": [{ "slot": "outfit", "src": "/avatar/outfits/field.svg", "tint": "outfitColor" }] },
+        { "id": "outfit-sport", "name": "Deportivo", "colors": ["teal", "navy", "berry", "gold"], "thumbnail": "/avatar/thumbs/outfit-sport.svg", "layers": [{ "slot": "outfit", "src": "/avatar/outfits/sport.svg", "tint": "outfitColor" }] }
+      ]
+    },
+    {
+      "id": "neck", "label": "Cuello", "icon": "▽", "selectionKey": "neckAccessory",
+      "items": [
+        { "id": "neck-none", "name": "Ninguno", "nullable": true, "thumbnail": "/avatar/thumbs/none.svg", "layers": [] },
+        { "id": "neck-scarf", "name": "Pañoleta coral", "thumbnail": "/avatar/thumbs/neck-scarf.svg", "layers": [{ "slot": "neckAccessory", "src": "/avatar/neck/scarf.svg" }] },
+        { "id": "neck-kerchief", "name": "Pañoleta cielo", "thumbnail": "/avatar/thumbs/neck-kerchief.svg", "layers": [{ "slot": "neckAccessory", "src": "/avatar/neck/kerchief.svg" }] }
+      ]
+    },
+    {
+      "id": "sash", "label": "Banda", "icon": "╱", "selectionKey": "sash",
+      "items": [
+        { "id": "sash-none", "name": "Sin banda", "nullable": true, "thumbnail": "/avatar/thumbs/none.svg", "layers": [] },
+        { "id": "sash-sky", "name": "Banda cielo", "thumbnail": "/avatar/thumbs/sash-sky.svg", "layers": [{ "slot": "sash", "src": "/avatar/sash/sky.svg" }] },
+        { "id": "sash-midnight", "name": "Banda noche", "thumbnail": "/avatar/thumbs/sash-midnight.svg", "layers": [{ "slot": "sash", "src": "/avatar/sash/midnight.svg" }] }
+      ]
+    },
+    {
+      "id": "glasses", "label": "Lentes", "icon": "∞", "selectionKey": "glasses",
+      "items": [
+        { "id": "glasses-none", "name": "Sin lentes", "nullable": true, "thumbnail": "/avatar/thumbs/none.svg", "layers": [] },
+        { "id": "glasses-round", "name": "Redondos", "thumbnail": "/avatar/thumbs/glasses-round.svg", "layers": [{ "slot": "glasses", "src": "/avatar/glasses/round.svg" }] }
+      ]
+    },
+    {
+      "id": "headwear", "label": "Cabeza", "icon": "⌂", "selectionKey": "headwear",
+      "items": [
+        { "id": "headwear-none", "name": "Ninguno", "nullable": true, "thumbnail": "/avatar/thumbs/none.svg", "layers": [] },
+        { "id": "headwear-cap", "name": "Gorra", "incompatibleTags": ["hair-high", "hair-volume"], "thumbnail": "/avatar/thumbs/headwear-cap.svg", "layers": [{ "slot": "headwear", "src": "/avatar/headwear/cap.svg" }] }
+      ]
+    },
+    {
+      "id": "accessory", "label": "Accesorios", "icon": "✧", "selectionKey": "accessory",
+      "items": [
+        { "id": "accessory-none", "name": "Ninguno", "nullable": true, "thumbnail": "/avatar/thumbs/none.svg", "layers": [] },
+        { "id": "accessory-bracelet", "name": "Pulsera", "thumbnail": "/avatar/thumbs/accessory-bracelet.svg", "layers": [{ "slot": "accessory", "src": "/avatar/accessories/bracelet.svg" }] },
+        { "id": "accessory-compass", "name": "Brújula", "unlocked": false, "thumbnail": "/avatar/thumbs/accessory-compass.svg", "layers": [{ "slot": "accessory", "src": "/avatar/accessories/compass.svg" }] },
+        { "id": "accessory-pins", "name": "Pines", "thumbnail": "/avatar/thumbs/accessory-pins.svg", "layers": [{ "slot": "accessory", "src": "/avatar/accessories/pins.svg" }] }
+      ]
+    },
+    {
+      "id": "effects", "label": "Efectos", "icon": "✺", "selectionKey": "effect",
+      "items": [
+        { "id": "effect-none", "name": "Sin efecto", "nullable": true, "thumbnail": "/avatar/thumbs/none.svg", "layers": [] },
+        { "id": "effect-sparkles", "name": "Destellos", "thumbnail": "/avatar/thumbs/effect-sparkles.svg", "layers": [{ "slot": "foregroundEffect", "src": "/avatar/effects/sparkles.svg" }] }
+      ]
+    }
+  ]
+}
